@@ -22,16 +22,13 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ### App Walkthrough GIF
 
 
-<img src='https://i.imgur.com/hKu9Noj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+<img src="https://i.imgur.com/hKu9Noj.gif" width=250><br>
 
 ## Running on real device
 
 
-<img src='https://i.imgur.com/KJAV06x.gif' title='Running on real device' width='' alt='Running on real device' />
-
+<img src="https://i.imgur.com/KJAV06x.gif" width=250><br>
 
 
 ### Notes
 I was unfamiliar with the project structure of Xcode, from how elements in the main swift files connected to the storyboard where the design is made, to setting up an Apple developer profile to run apps on real devices. I had an error installing cocoapods as well but I had to install cocoapods through homebrew and then reinstall the alamofireimage package after I installed cocoapods.
-
