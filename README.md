@@ -21,7 +21,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="https://i.imgur.com/LlmmyqM.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+After creating the collectionview page with the images of movie posters in a grid, at first the icons of the posters were very small due to the default setting in Xcode, but this was fixed after setting the estimated size attribute to none. I was unfamiliar with using auto layout in Xcode so it was a challenge to format the spacing of images and how they are cropped.
 
 ## Flix Part 1
 
