@@ -65,6 +65,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let synopsis = movie["overview"] as! String
         
         cell.titleLabel.text = title
+        
         cell.synopsisLabel.text = synopsis
         
         let baseUrl = "https://image.tmdb.org/t/p/w185"
@@ -74,6 +75,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.posterView.af.setImage(withURL: posterUrl)
         
         return cell
+    }
+    
+    override func prepare(for segue:
+                          UIStoryboardSegue, sender: Any?) {
+        
+        // find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie =  movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 
